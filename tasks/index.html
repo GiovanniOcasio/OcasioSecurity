@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocasio Security</title>
+  <link rel="icon" type="image/png" href="../imgs/ocasio_background.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #149414;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #title {
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: black;
+      border-bottom: 2px solid #149414;
+      z-index: 10;
+      padding: 5px 0;
+    }
+
+    #nav a {
+      padding: 10px 15px;
+      color: #149414;
+      text-decoration: none;
+      text-align: center;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      background-color: black;
+      margin: 5px 5px;
+      border-radius: 5px;
+    }
+
+    #nav a:hover {
+      background-color: #0f7f0f;
+    }
+
+    .social-button.github {
+      background-color: #333;
+      color: white;
+    }
+
+    .social-button.github:hover {
+      background-color: #555;
+    }
+
+    .social-button.linkedin {
+      background-color: #0077b5;
+      color: white;
+    }
+
+    .social-button.linkedin:hover {
+      background-color: #005983;
+    }
+
+    #iframe-container {
+      padding-top: 140px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 30%;
+      height: 600px;
+      border: 2px solid #149414;
+      background-color: #000;
+      margin-top: 45px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+      iframe {
+        width: 45%;
+        height: 500px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      #title {
+        font-size: 22px;
+      }
+
+      #nav a {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin: 3px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+
+      #iframe-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Ocasio Security</div>
+  <div id="nav">
+    <a href="../">Home</a>
+    <a href="../whoami">whoami</a>
+    <a href="../experience">Experience</a>
+    <a href="../videos">Videos</a>
+    <a href="https://github.com/GiovanniOcasio/GiovanniOcasio" class="social-button github" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/giovanni-ocasio-3369b1198/" class="social-button linkedin" target="_blank">LinkedIn</a>
+  </div>
+
+  <div id="iframe-container">
+    <iframe src="./files/MALREP00001.pdf"></iframe>
+    <iframe src="./files/MALREP00002.pdf"></iframe>
+    <iframe src="./files/MALREP00003.pdf"></iframe>
+  </div>
+  <div id="iframe-container">
+    <iframe src="./files/MALREP00004.pdf"></iframe>
+    <iframe src="./files/MALREP00005.pdf"></iframe>
+    <iframe src="../imgs/coming_soon.png"></iframe>
+  </div>
+</body>
+</html>

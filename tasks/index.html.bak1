@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocasio Security</title>
+  <link rel="icon" type="image/png" href="../imgs/ocasio_security.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #149414;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #title {
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: black;
+      border-bottom: 2px solid #149414;
+      z-index: 10;
+      padding: 5px 0;
+    }
+
+    #nav a {
+      padding: 10px 15px;
+      color: #149414;
+      text-decoration: none;
+      text-align: center;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      background-color: black;
+      margin: 5px 5px;
+      border-radius: 5px;
+    }
+
+    #nav a:hover {
+      background-color: #0f7f0f;
+    }
+
+    .social-button.github {
+      background-color: #333;
+      color: white;
+    }
+
+    .social-button.github:hover {
+      background-color: #555;
+    }
+
+    .social-button.linkedin {
+      background-color: #0077b5;
+      color: white;
+    }
+
+    .social-button.linkedin:hover {
+      background-color: #005983;
+    }
+
+    #iframe-container {
+      padding-top: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      padding-bottom: 60px;
+    }
+
+    .pdf-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    iframe {
+      width: 90vw;
+      height: 90vh;
+      border: 2px solid #149414;
+      background-color: #000;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #149414;
+      color: black;
+      font-family: monospace;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0f7f0f;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+      iframe {
+        width: 95vw;
+        height: 80vh;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      #title {
+        font-size: 22px;
+      }
+
+      #nav a {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin: 3px;
+      }
+
+      iframe {
+        width: 100vw;
+        height: 70vh;
+      }
+
+      .download-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+
+      #iframe-container {
+        padding: 15px;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Ocasio Security</div>
+
+  <div id="nav">
+    <a href="../">Home</a>
+    <a href="../whoami">whoami</a>
+    <a href="../experience">Experience</a>
+    <a href="../videos">Videos</a>
+    <a href="https://github.com/GiovanniOcasio/GiovanniOcasio" class="social-button github" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/giovanni-ocasio-3369b1198/" class="social-button linkedin" target="_blank">LinkedIn</a>
+  </div>
+
+  <div id="iframe-container">
+    <div class="pdf-wrapper">
+      <iframe src="./files/MALREP00001.pdf"></iframe>
+      <a href="./files/MALREP00001.pdf" download="MALREP00001.pdf">
+        <button class="download-btn">⬇️ Download MALREP00001</button>
+      </a>
+    </div>
+
+    <div class="pdf-wrapper">
+      <iframe src="./files/MALREP00002.pdf"></iframe>
+      <a href="./files/MALREP00002.pdf" download="MALREP00002.pdf">
+        <button class="download-btn">⬇️ Download MALREP00002</button>
+      </a>
+    </div>
+
+    <div class="pdf-wrapper">
+      <iframe src="./files/MALREP00003.pdf"></iframe>
+      <a href="./files/MALREP00003.pdf" download="MALREP00003.pdf">
+        <button class="download-btn">⬇️ Download MALREP00003</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+

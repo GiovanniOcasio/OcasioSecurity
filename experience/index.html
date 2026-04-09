@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Ocasio Security</title>
+  <link rel="icon" type="image/png" href="../imgs/ocasio_background.png"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #149414;
+      font-family: monospace;
+      text-align: center;
+    }
+
+    #title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      background-color: black;
+      color: #149414;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    #nav {
+      position: fixed;
+      top: 80px; /* Adds space between title and nav */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      border-bottom: 2px solid #149414;
+      flex-wrap: wrap;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      z-index: 99;
+    }
+
+    #nav a {
+      color: #149414;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    #nav a:hover {
+      background-color: #0f7f0f;
+    }
+
+    #timeline {
+      position: relative;
+      margin: 200px auto 60px; /* Adjusted for new nav spacing */
+      padding: 20px 0;
+      max-width: 800px;
+    }
+
+    /* Vertical center line */
+    #timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: #149414;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .event {
+      position: relative;
+      background-color: black;
+      margin: 40px auto;
+      padding: 20px;
+      width: 70%;
+      border: 1px solid #149414;
+      border-radius: 10px;
+      z-index: 2;
+    }
+
+    .event::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      background-color: #149414;
+      border: 2px solid white;
+      border-radius: 50%;
+      z-index: 3;
+    }
+
+    .event p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      #nav {
+        flex-direction: row;
+        font-size: 14px;
+      }
+
+      #nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+      }
+
+      #timeline {
+        padding: 10px;
+        width: 90%;
+      }
+
+      .event {
+        width: 90%;
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Work Experience</div>
+
+  <div id="nav">
+    <a href="../">Home</a>
+    <a href="../whoami">whoami</a>
+    <a href="../videos">Videos</a>
+    <a href="../tasks">Tasks</a>
+    <a href="https://github.com/GiovanniOcasio/GiovanniOcasio" class="social-button github" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/giovanni-ocasio-3369b1198/" class="social-button linkedin" target="_blank">LinkedIn</a>
+  </div>
+
+  <div id="timeline">
+    <div class="event">
+      <p><strong>Jan 2016 – Sep 2020</strong></p>
+      <p>United States Marine Corps</p>
+      <p>Joint Terminal Attack Controller (JTAC). Performed two deployments acting as a liaison between ground infantry and artillery units. Performed precise and coordinated attacks utilizing artillery, mortars, naval guns, and fixed wing/rotary wing aircraft.</p>
+    </div>
+    <div class="event">
+      <p><strong>Sep 2020 – Apr 2021</strong></p>
+      <p>Tristate Utilities</p>
+      <p>CCTV/Cutter Operator – Performed pipe rehabilitation and inspection for municipals and private residences across three states.</p>
+    </div>
+    <div class="event">
+      <p><strong>Dec 2020 – Nov 2022</strong></p>
+      <p>Western Governors University</p>
+      <p>Bachelor's in Cyber Security and Information Assurance</p>
+    </div>
+    <div class="event">
+      <p><strong>Jun 2021 – Dec 2021</strong></p>
+      <p>SAIC</p>
+      <p>Help Desk Operator – Provided high-quality customer service and technical support to remote users on a 24/7 IT help desk, assisting with issues related to account management, software troubleshooting, and hardware configurations.</p>
+    </div>
+    <div class="event">
+      <p><strong>Dec 2021 – May 2022</strong></p>
+      <p>Alakaina</p>
+      <p>Computer Equipment Specialist II/Vulnerability Analyst – Conducted vulnerability scans using ACAS (Assured Compliance Assessment Solution) to identify potential risks across the network and ensure compliance with DoD standards.</p>
+    </div>
+    <div class="event">
+      <p><strong>May 2022 – Oct 2022</strong></p>
+      <p>ManTech</p>
+      <p>Cyber Security Technician – Conducted system categorization and identified control families to apply appropriate security controls.</p>
+    </div>
+    <div class="event">
+      <p><strong>Feb 2023 – Aug 2023</strong></p>
+      <p>Western Governors University</p>
+      <p>Masters in Cyber Security and Information Assurance</p>
+    </div>
+    <div class="event">
+      <p><strong>Oct 2022 – Mar 2025</strong></p>
+      <p>Peraton</p>
+      <p>Penetration Tester – Providing security assessments for critical infrastructure, leveraging military discipline and technical expertise.</p>
+    </div>
+    <div class="event">
+      <p><strong>Mar 2025 – Present</strong></p>
+      <p>BAM</p>
+      <p>Cyber Engineer – Conduct testing on web applications to ensure that they do not introduce vulnerabilities to the internal environment. Discuss methods to replicate the exploitation of vulnerabilities discovered and potential resolutions to discovered vulnerabilities with the development team.</p>
+    </div>
+  </div>
+</body>
+</html>
+
