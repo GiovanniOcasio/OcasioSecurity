@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ocasio Security</title>
+  <link rel="icon" type="image/png" href="imgs/ocasio_background.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #149414;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #title {
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #nav {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      border-bottom: 2px solid #149414;
+      z-index: 10;
+      flex-wrap: wrap;
+    }
+
+    #nav a {
+      padding: 15px 20px;
+      color: #149414;
+      text-decoration: none;
+      text-align: center;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+      background-color: black;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    #nav a:hover {
+      background-color: #0f7f0f;
+    }
+
+    #skull-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 140px;
+      padding: 0 20px;
+    }
+
+    #skull-banner img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #typewriter {
+      font-size: 20px;
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      display: inline-block;
+      border-right: 2px solid #149414;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .typing {
+      animation: typing 4s steps(40) forwards, blink 0.75s step-end infinite;
+    }
+
+    @media (max-width: 768px) {
+      #title {
+        font-size: 24px;
+      }
+
+      #typewriter {
+        font-size: 18px;
+      }
+
+      #nav a {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      #skull-banner {
+        margin-top: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="title">Ocasio Security</div>
+
+  <div id="nav">
+    <a href="./whoami">whoami</a>
+    <a href="./experience">Experience</a>
+    <a href="./videos">Videos</a>
+    <a href="./tasks">Tasks</a>
+    <a href="https://github.com/GiovanniOcasio/GiovanniOcasio" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/giovanni-ocasio-3369b1198/" target="_blank">LinkedIn</a>
+  </div>
+
+  <div id="skull-banner">
+    <img src="./imgs/skull.svg" alt="Skull Banner" />
+  </div>
+
+  <div id="content">
+    <div id="typewriter"></div>
+  </div>
+
+  <script>
+    const textElement = document.getElementById("typewriter");
+    const textToType = "What I'm about to tell you is Top Secret. There's a powerful group of people out there that are secretly running the world. I'm talking about the guys no one knows about, the guys who are invisible. The top 1% of the top 1%. The guys that play God without permission.";
+
+    let index = 0;
+
+    function typeWriter() {
+      if (index < textToType.length) {
+        textElement.textContent += textToType.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+
+    typeWriter();
+  </script>
+</body>
+</html>
